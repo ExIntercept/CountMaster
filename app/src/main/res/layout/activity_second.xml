@@ -1,6 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvFunny2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCounter2"
+        app:layout_constraintStart_toEndOf="@+id/tvCounter2"
+        app:layout_constraintTop_toTopOf="@+id/tvCounter2"
+        tools:text="Nice!" />
+
+    <TextView
+        android:id="@+id/tvDevName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Made by BlackJackX100"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/bDownCounter"
+        app:layout_constraintStart_toStartOf="@+id/bDownCounter"
+        app:layout_constraintTop_toBottomOf="@+id/bDownCounter" />
+
+    <TextView
+        android:id="@+id/tvCounter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/etDownCounter"
+        app:layout_constraintEnd_toEndOf="@+id/bDownCounter"
+        app:layout_constraintStart_toStartOf="@+id/bDownCounter"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle2" />
+
+    <Button
+        android:id="@+id/bDownCounter"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="290dp"
+        android:text="DOWNCounter"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bDownCounter"
+        app:layout_constraintEnd_toEndOf="@+id/bDownCounter"
+        app:layout_constraintStart_toStartOf="@+id/bDownCounter" />
+
+    <ImageButton
+        android:id="@+id/bPreviousPage"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="#00FFFFFF"
+        android:cropToPadding="false"
+        android:rotationY="-180"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/button"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/etDownCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:ems="5"
+        android:gravity="center"
+        android:inputType="text"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/bDownCounter"
+        app:layout_constraintStart_toStartOf="@+id/bDownCounter"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="100" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
