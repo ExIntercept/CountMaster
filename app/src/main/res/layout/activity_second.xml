@@ -91,7 +91,7 @@
         android:layout_marginTop="296dp"
         android:ems="5"
         android:gravity="center"
-        android:inputType="text"
+        android:inputType="number"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/bDownCounter"
         app:layout_constraintStart_toStartOf="@+id/bDownCounter"
